@@ -1,0 +1,23 @@
+.Home{
+    background:#000000!important;
+    
+}
+.texto1{
+    color: #FFFFFF!important;
+    
+
+}
+.texto2{
+    color: gray!important;
+}
+
+.img{
+    width: 600px;
+    display: block;
+    margin: 0 auto;
+  
+}
+.botao{
+background: rgb(69,0,74)!important;
+background: linear-gradient(0deg, rgba(69,0,74,1) 9%, rgba(200,62,201,1) 50%, rgba(33,2,74,1) 93%)!important;
+}
