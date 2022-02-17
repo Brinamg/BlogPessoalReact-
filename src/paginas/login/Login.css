@@ -1,0 +1,41 @@
+.login{
+    background-color: black;
+
+}
+.entrar{
+    font-weight: 'bold';
+    color: white!important;
+}
+
+#senha{
+    background-color: rgb(192, 156, 187);
+    border-radius: 5px;
+}
+#usuario{
+    background-color: rgb(192, 156, 187);
+    border-radius: 5px;
+}
+
+.bot{
+    background: rgb(16, 193, 206)!important;
+}
+
+.cad{
+    color: blueviolet;
+    font-weight: 'bold';
+}
+.letra{
+    color: aliceblue;
+}
+
+.img{
+    background-image: url(https://cdn.pixabay.com/photo/2017/01/31/09/43/arrows-2023449_960_720.png);
+    background-repeat: no-repeat;
+    width: 100vh;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.text-decorator-none{
+    text-decoration: none;
+}

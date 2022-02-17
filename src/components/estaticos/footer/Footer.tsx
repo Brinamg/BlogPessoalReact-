@@ -15,18 +15,18 @@ function Footer (){
                             <Typography variant="h5" align="center" gutterBottom style={{ color:"white" }} className='textos'>Siga-nos nas redes sociais </Typography>
                         </Box>
                         <Box className='logo' display="flex" alignItems="center" justifyContent="center">
-                            <a href="https://www.instagram.com/sabrinahmg/" target="_blank">
+                            <a href="https://www.instagram.com/sabrinahmg"target="_blank" rel="noreferrer" >
                                 <InstagramIcon style={{ fontSize: 60, color: "white" }} className='logo'/>
                             </a>
-                            <a href="https://www.linkedin.com/in/sabrinamouragandra/" target="_blank">
+                            <a href="https://www.linkedin.com/in/sabrinamouragandra" target="_blank" rel="noreferrer" >
                                 <LinkedInIcon style={{ fontSize: 60, color: "white" }} className='logo'/>
                             </a>
-                            <a href="https://github.com/Brinamg" target="_blank">
-                                <GitHubIcon style={{ fontSize: 52, color: "white" }}className='logo' />
+                            <a href="https://github.com/Brinamg" target="_blank" rel="noreferrer" >
+                                <GitHubIcon style={{ fontSize: 60, color: "white" }}className='logog' />
                             </a>
                         </Box>
                     </Box>
-                    <Box className='rodape' style={{ backgroundColor: "#303F9F", height: "60px" }}>
+                    <Box className='rodape'>
                         <Box paddingTop={1}>
                             <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
                         </Box>

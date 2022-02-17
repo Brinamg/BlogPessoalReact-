@@ -3,9 +3,12 @@
     
 }
 
+.text-decoretor-none{
+    text-decoration:none;
+}
+
 .Navbar{
-    background: rgb(0,0,0)!important;
-    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(2,8,45,1) 42%, rgba(7,16,70,1) 68%)!important;
+    background: #069be0!important;
     
     
 }
@@ -15,18 +18,13 @@
     flex-grow: 1!important;
     display: flex;
     
-
-    
-    
-    
-    
     
 }
 
 .tema{
     color: #FFFFFF!important;
     display: block;
-    margin-right: 750px;
+    margin-right: 780px;
 
 }
 

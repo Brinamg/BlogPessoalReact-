@@ -4,20 +4,22 @@
 }
 .texto1{
     color: #FFFFFF!important;
-    
+    text-transform: uppercase!important;
 
 }
 .texto2{
-    color: gray!important;
+    color: #808080!important;
 }
 
-.img{
-    width: 600px;
+.imagem{
+    width: 200px;
     display: block;
-    margin: 0 auto;
+    margin-top: 10px;
   
 }
 .botao{
-background: rgb(69,0,74)!important;
-background: linear-gradient(0deg, rgba(69,0,74,1) 9%, rgba(200,62,201,1) 50%, rgba(33,2,74,1) 93%)!important;
+background: #94078d!important;
+color: #FFFFFF!important;
+
 }
+
