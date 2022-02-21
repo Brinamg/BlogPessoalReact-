@@ -1,25 +1,25 @@
 .redes{
-    background:#03f196!important;
-    height: 120px!important;
+    background:#E3B7A0!important;
+    height: 90px!important;
 }
 .logo{
-    color: aliceblue!important;
+    color: #BF9270!important;
     font-size: 35px!important;
 }
 .logog{
-    color: aliceblue!important;
+    color: #BF9270!important;
     font-size: 30px!important;
 }
 
 .textos{
     font-size: 20px!important;
+    
 }
 
 .rodape{
-    background: #069be0!important;
-
-
-   
+    background: #E3B7A0!important;
+    color: #BF9270!important;
+    text-decoration: none!important;   
 }
 
 

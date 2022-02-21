@@ -1,24 +1,50 @@
 .Home{
-    background:#000000!important;
+    background-color: #FFEDDB!important;
+    background-image: url(../../assets/img/moma-ap.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+    background-position: center;
+    width: 100vh;
+    min-height: calc(100vh - 151.72px);
+   
+ 
+  
     
 }
+.vidro{
+    width: 100vh;
+    height: 50vh;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px ); 
+    border-radius: 10px;
+}
 .texto1{
-    color: #FFFFFF!important;
+    padding-top: 50px;
+    padding-left: 30px;
+    text-align: center;
+    color: #070707!important;
     text-transform: uppercase!important;
+    font-weight: bold;
 
 }
 .texto2{
-    color: #808080!important;
+    padding: auto;
+    margin: auto;
+    color: #FFFFFF!important;
 }
 
-.imagem{
-    width: 200px;
-    display: block;
-    margin-top: 10px;
+/*.imagem{
+    background-image: url(../../assets/img/cine.png);
+    background-repeat: no-repeat;
+    background-size: 350px;
+    background-position: center;
+    width: 100vh;
+    min-height: calc(100vh - 245.75px);
   
-}
+}*/
 .botao{
-background: #94078d!important;
+background: #EDCDBB!important;
 color: #FFFFFF!important;
 
 }

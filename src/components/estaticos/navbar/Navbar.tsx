@@ -9,8 +9,8 @@ function Navbar (){
          <AppBar className='Navbar' position="static" style={{backgroundColor: "pointer"}}>
                 <Toolbar variant="dense" >
                     <Box className='tema' >
-                        <Typography variant="h5" color="inherit">
-                            PONO
+                         <Typography variant="h5" color="inherit">
+                            Gandra
                         </Typography>
                     </Box>
 

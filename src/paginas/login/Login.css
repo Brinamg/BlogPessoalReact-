@@ -1,35 +1,44 @@
 .login{
-    background-color: black;
+    background-color:#FFEDDB;
+}
 
+form{
+    background-color: #bf927080;
+    margin: 8px;
+    padding: 40px;
+    border-radius: 10px;
 }
 .entrar{
-    font-weight: 'bold';
-    color: white!important;
+
+    font-weight: bold;
+    color: #FFFFFF!important;
+    
 }
 
-#senha{
-    background-color: rgb(192, 156, 187);
-    border-radius: 5px;
-}
-#usuario{
-    background-color: rgb(192, 156, 187);
+.campo{
+    background-color: #FFEDDB;
     border-radius: 5px;
 }
 
 .bot{
-    background: rgb(16, 193, 206)!important;
+    background: #EDCDBB!important;
 }
 
-.cad{
-    color: blueviolet;
+.cadastro{
+    color: #FFEDDB;
     font-weight: 'bold';
+    
 }
 .letra{
-    color: aliceblue;
+    background-color: #bf927080;
+    margin: 8px;
+    padding: 40px ;
+    color: #b48a6a;
+    border-radius: 10px;
 }
 
 .img{
-    background-image: url(https://cdn.pixabay.com/photo/2017/01/31/09/43/arrows-2023449_960_720.png);
+    background-image: url(../../assets/img/art.png);
     background-repeat: no-repeat;
     width: 100vh;
     min-height: 100vh;
@@ -38,4 +47,32 @@
 }
 .text-decorator-none{
     text-decoration: none;
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .login {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+   
+    .login {
+        width: 90%;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .instagram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
 }

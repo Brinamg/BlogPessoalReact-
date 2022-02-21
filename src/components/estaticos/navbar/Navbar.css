@@ -8,13 +8,13 @@
 }
 
 .Navbar{
-    background: #069be0!important;
+    background: #e3b7a098!important;
     
     
 }
 
 .menue{
-    color: #FFFFFF!important;
+    color: #BF9270!important;
     flex-grow: 1!important;
     display: flex;
     
@@ -22,9 +22,9 @@
 }
 
 .tema{
-    color: #FFFFFF!important;
+    color: #BF9270!important;
     display: block;
     margin-right: 780px;
-
+    font-weight: bolder;
 }
 
