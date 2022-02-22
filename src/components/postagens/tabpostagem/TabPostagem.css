@@ -1,0 +1,15 @@
+.titulo{
+    font-weight: bold!important;
+ }
+
+ .appbar{
+    background:#e9bda5!important;
+ }
+
+ .text01{
+    color: #FFFFFF!important;
+    flex-grow: 1!important;
+    font-weight: bold!important;
+
+
+ }

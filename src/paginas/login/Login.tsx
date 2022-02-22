@@ -9,7 +9,7 @@ import './Login.css';
 
 function Login() {
     let history = useHistory();
-    const [token, setToken] = useLocalStorage ('token');
+    const [token, setToken] = useLocalStorage ("token");
     const [userLogin, setUserLogin] = useState<UserLogin>(
         {
             id: 0,
@@ -25,8 +25,7 @@ function Login() {
             [e.target.name]: e.target.value
         })
     }
-
-        useEffect(()=>{
+        useEffect(() => {
             if(token !== ""){
                 history.push('/home')
             }

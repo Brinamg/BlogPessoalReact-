@@ -10,7 +10,7 @@ form{
 }
 .entrar{
 
-    font-weight: bold;
+    font-weight: bold!important;
     color: #FFFFFF!important;
     
 }
