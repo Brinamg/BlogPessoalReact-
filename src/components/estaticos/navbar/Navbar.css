@@ -4,7 +4,7 @@
 }
 
 .text-decoretor-none{
-    text-decoration:none;
+    text-decoration:none!important;
 }
 
 .Navbar{
