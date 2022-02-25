@@ -8,7 +8,7 @@ import Login from './paginas/login/Login';
 import './App.css';
 import ListaTema from './components/temas/listaTema/ListaTema';
 import ListaPostagem from './components/postagens/listapostagem/ListaPostagem';
-import CadastroPost from './components/postagens/cadastroPost/CadstroPost';
+import CadastroPost from './components/postagens/cadastroPost/CadastroPost';
 import CadastroTema from './components/temas/cadastroTema/CadastroTema';
 import DeletarPostagem from './components/postagens/deletarPostagem/DeletarPostagem';
 import DeletarTema from './components/temas/deletarTema/DeleteTema';
@@ -37,7 +37,7 @@ function App() {
           <Route exact path='/temas'>
             <ListaTema/>
           </Route>
-          <Route exact path='/posts'>
+          <Route exact path='/postagens'>
             <ListaPostagem />
           </Route>
           <Route exact path='/formularioPostagem'>

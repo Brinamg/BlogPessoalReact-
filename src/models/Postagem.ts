@@ -1,6 +1,6 @@
 import Tema from "./Tema";
 
-interface Postagem{
+interface Postagem {
     id: number;
     titulo: string;
     texto: string;

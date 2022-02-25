@@ -5,15 +5,13 @@ import { useHistory, useParams } from 'react-router-dom';
 import useLocalStorage from 'react-use-localstorage';
 import { buscaId, deleteId } from '../../../services/Service';
 import Tema from '../../../models/Tema';
-import Postagem from '../../../models/Postagem'
-
 
 
 function DeletarTema() {
     let history = useHistory();
     const { id } = useParams<{id: string}>();
     const [token, setToken] = useLocalStorage('token');
-    const [post, setPosts] = useState<Postagem>()
+    const [tema, setTema] = useState<Tema>()
 
     useEffect(() => {
         if (token == "") {
@@ -30,7 +28,7 @@ function DeletarTema() {
     }, [id])
 
     async function findById(id: string) {
-        buscaId(`/postagens/${id}`, setPosts, {
+        buscaId(`/temas/${id}`, setTema, {
             headers: {
               'Authorization': token
             }
@@ -38,19 +36,18 @@ function DeletarTema() {
         }
 
         function sim() {
-            history.push('/postagens')
-            deleteId(`/postagens/${id}`, {
+            history.push('/temas')
+            deleteId(`/temas/${id}`, {
               headers: {
                 'Authorization': token
               }
             });
-            alert('Postagem deletada com sucesso');
+            alert('Tema deletado com sucesso');
           }
         
           function nao() {
-            history.push('/postagens')
+            history.push('/temas')
           }
-  
           
   return (
     <>
@@ -62,19 +59,19 @@ function DeletarTema() {
                 Deseja deletar o Tema:
               </Typography>
               <Typography color="textSecondary">
-                tema
+                {tema?.descricao}
               </Typography>
             </Box>
           </CardContent>
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-                <Button variant="contained" className="marginLeft" size='large' color="primary">
+                <Button onClick={sim} variant="contained" className="marginLeft" size='large' color="primary">
                   Sim
                 </Button>
               </Box>
               <Box mx={2}>
-                <Button variant="contained" size='large' color="secondary">
+                <Button  onClick={nao} variant="contained" size='large' color="secondary">
                   Não
                 </Button>
               </Box>

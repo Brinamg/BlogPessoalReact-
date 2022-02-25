@@ -1,4 +1,4 @@
-interface UserLogin{
+interface UserLogin {
     id: number;
     usuario: string;
     senha: string;
