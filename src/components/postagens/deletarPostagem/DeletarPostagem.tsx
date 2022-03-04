@@ -6,6 +6,7 @@ import { buscaId, deleteId } from '../../../services/Service';
 import { useHistory, useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { TokenState } from '../../../store/tokens/tokensReducer';
+import {toast} from 'react-toastify';
 
 function DeletarPostagem() {
   let history = useHistory();
@@ -17,7 +18,16 @@ function DeletarPostagem() {
 
   useEffect(() => {
     if (token === "") {
-      alert("Você precisa estar logado")
+      toast.error('Você precisa estar logado', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        theme: "light",
+        progress: undefined,
+    });
       history.push("/login")
 
     }
@@ -44,7 +54,16 @@ function DeletarPostagem() {
         'Authorization': token
       }
     });
-    alert('Postagem deletada com sucesso');
+    toast.success('Postagem deletada com sucesso', {
+      position: "top-right",
+      autoClose: 2000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      theme: "light",
+      progress: undefined,
+  });
   }
 
   function nao() {
@@ -53,15 +72,15 @@ function DeletarPostagem() {
 
   return (
     <>
-      <Box m={2}>
-        <Card variant="outlined" >
+       <Box m={2}>
+        <Card variant="outlined" className='card'>
           <CardContent>
             <Box justifyContent="center">
               <Typography color="textSecondary" gutterBottom>
                 Deseja deletar a Postagem:
               </Typography>
               <Typography color="textSecondary" >
-                Tema
+              {post?.titulo}
               </Typography>
             </Box>
 
@@ -69,14 +88,14 @@ function DeletarPostagem() {
           <CardActions>
             <Box display="flex" justifyContent="start" ml={1.0} mb={2} >
               <Box mx={2}>
-                <Button variant="contained" className="marginLeft" size='large' color="primary">
-                  Sim
-                </Button>
+              <Button onClick={sim} variant="contained" className="bot02" size='large' color="primary">
+                Sim
+              </Button>
               </Box>
               <Box>
-                <Button variant="contained" size='large' color="secondary">
-                  Não
-                </Button>
+              <Button className='bot03' onClick={nao} variant="contained" size='large' color="secondary">
+                Não
+              </Button>
               </Box>
             </Box>
           </CardActions>
