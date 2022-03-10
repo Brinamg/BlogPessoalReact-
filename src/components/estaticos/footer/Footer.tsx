@@ -38,8 +38,8 @@ function Footer() {
                     <Typography variant="subtitle2" align="center" gutterBottom style={{ color: "white" }} >© 2020 Copyright:</Typography>
                 </Box>
                 <Box>
-                    <a target="_blank" href=" ">
-                        <Typography variant="subtitle2" gutterBottom style={{ color: "white" }} align="center">brasil.generation.org</Typography>
+                    <a target="_blank" href=" " className='text-decorator-none'>
+                        <Typography  variant="subtitle2" gutterBottom style={{ color: "white" }} align="center">www.github.com/Brinamg/BlogPessoalReact-</Typography>
                     </a>
                 </Box>
             </Box>
